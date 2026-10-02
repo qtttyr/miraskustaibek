@@ -17,7 +17,7 @@ export const profile = {
   university: "Cardiff University — Kazakhstan",
   location: "Astana, KZ",
   timezone: "Asia/Almaty",
-  email: "miras@kustaibek.com",
+  email: "mirasbusy@gmail.com",
   telegram: "@mmespiderman",
   github: "https://github.com/qtttyr",
   x: "https://x.com/",
