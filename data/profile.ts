@@ -21,13 +21,13 @@ export const profile = {
   telegram: "@mmespiderman",
   github: "https://github.com/qtttyr",
   x: "https://x.com/",
-  instagram: "https://instagram.com/",
+  instagram: "https://www.instagram.com/vaprooll",
   portfolio: "miraskustaibek.com",
   siteUrl: "https://miraskustaibek.com",
   sameAs: [
     "https://github.com/qtttyr",
-    "https://x.com/",
-    "https://instagram.com/",
+    "https://x.com/vaprolol",
+    "https://www.instagram.com/vaprooll/",
     "https://t.me/mmespiderman",
   ],
 } as const;
