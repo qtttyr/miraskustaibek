@@ -5,7 +5,7 @@
   "description": "Personal site and digital business card of Miras Kustaibek — developer, startup manager, entrepreneur.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qtttyr/miras-kustaibek.git"
+    "url": "git+https://github.com/qtttyr/miraskustaibek.git"
   },
   "homepage": "https://miraskustaibek.com",
   "scripts": {
