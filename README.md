@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# miraskustaibek.com
 
-## Getting Started
+Personal site and digital business card of **Miras Kustaibek** — developer, startup manager, entrepreneur. Astana, Kazakhstan.
 
-First, run the development server:
+Built with Next.js (App Router), TypeScript and Tailwind CSS. Fully static, SEO-ready: JSON-LD `Person`, sitemap, robots, Open Graph image.
+
+## Stack
+
+- [Next.js 16](https://nextjs.org) (App Router, Turbopack)
+- [React 19](https://react.dev)
+- [TypeScript](https://typescriptlang.org)
+- [Tailwind CSS 4](https://tailwindcss.com)
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint        # eslint
+npx tsc --noEmit    # type check
+npm run build       # production build
+npm start           # serve the production build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Editing content
 
-## Learn More
+All personal data lives in `data/profile.ts` — name, roles, contacts, `siteUrl`, `sameAs` links, and the `bio` block used by the About section and the structured data. Update it there, not inside components.
 
-To learn more about Next.js, take a look at the following resources:
+## SEO
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app/layout.tsx` — metadata, canonical URL, `Person` JSON-LD
+- `app/sitemap.ts`, `app/robots.ts` — generated at build time
+- `app/opengraph-image.tsx` — OG/Twitter image rendered with `next/og`
+- `app/icon.svg` — favicon
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+After changing the domain, update `siteUrl` in `data/profile.ts`.
 
-## Deploy on Vercel
+## Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Vercel: import the repository, no build configuration needed. Then in [Google Search Console](https://search.google.com/search-console) add the property, verify via DNS record and submit `https://miraskustaibek.com/sitemap.xml`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact
+
+[Miras Kustaibek](https://miraskustaibek.com) · [GitHub](https://github.com/qtttyr) · [Telegram](https://t.me/mmespiderman)

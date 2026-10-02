@@ -1,7 +1,13 @@
 {
-  "name": "visitka",
-  "version": "0.1.0",
+  "name": "miras-kustaibek",
+  "version": "1.0.0",
   "private": true,
+  "description": "Personal site and digital business card of Miras Kustaibek — developer, startup manager, entrepreneur.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qtttyr/miras-kustaibek.git"
+  },
+  "homepage": "https://miraskustaibek.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
