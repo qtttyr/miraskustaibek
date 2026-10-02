@@ -62,6 +62,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/icon.svg" }],
   },
   manifest: "/manifest.webmanifest",
+  verification: {
+    google: "gStgCMVULfih4OeZELdQrvnDmpQH9GZBTDqrUIfFzbk",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
